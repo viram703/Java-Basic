@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.*;
+import java.util.Scanner;
 
 class Person
 {
@@ -13,13 +14,31 @@ public class CollectionDemo {
 
 		System.out.println("collection session ");
 		Person person=new Person();
+		Scanner input = new Scanner(System.in);
+		int number; 
+		String iname;
+		for(int i=0;i<5;i++)
+		{
+			System.out.print("Enter Name of employe: ");
+			iname=input.next();
+			System.out.print("Enter number of employe : ");
+
+			
+			
+		}
+		
 		person.name="Viram_sarvariya";
 		person.number=9904168517l;
 		
 		
 		List p1=new ArrayList<>();
 		p1.add(person);
-		System.out.println(p1);
+		
+		 for(int i=0;i<p1.size();i++)  
+         {  
+			 System.out.println(p1.get(i));     
+         } 
+//		System.out.println(p1);
 		
 /* 
 		ArrayList<String> al=new ArrayList<String>(); 
