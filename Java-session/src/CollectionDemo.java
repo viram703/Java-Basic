@@ -6,6 +6,26 @@ class Person
 {
 	String name;
 	long number;
+	Person(String name,long number)
+	{
+		this.name=name;
+		this.number=number;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public long getNumber() {
+		return number;
+	}
+	public void setNumber(long number) {
+		this.number = number;
+	}
+	
+	
 }
 
 public class CollectionDemo {
@@ -13,31 +33,40 @@ public class CollectionDemo {
 	public static void main(String[] args) {
 
 		System.out.println("collection session ");
-		Person person=new Person();
-		Scanner input = new Scanner(System.in);
-		int number; 
-		String iname;
-		for(int i=0;i<5;i++)
+		Person person1=new Person("rohan",9904198517l);
+		Person person2=new Person("jayraj",8517528777l);
+		Person person3=new Person("smith",9723868517l);
+		Person person4=new Person("anil",9902148517l);
+		ArrayList<Person> al2=new ArrayList<Person>(); 
+		al2.add(person1);
+		al2.add(person2);
+		al2.add(person3);
+		al2.add(person4);
+
+
+		al2.add(person1);
+		Iterator itr2=al2.iterator();  
+
+
+//		Scanner input = new Scanner(System.in);
+//		int number; 
+//		String iname;
+	    System.out.println("display using for each loop");  
+
+		for(Person pr2:al2)
 		{
-			System.out.print("Enter Name of employe: ");
-			iname=input.next();
-			System.out.print("Enter number of employe : ");
+		    System.out.println(pr2.name+" "+pr2.number);  
 
 			
-			
 		}
+//		
+		 while(itr2.hasNext()){  
+			    Person pr=(Person)itr2.next();  
+			    System.out.println(pr.name+" "+pr.number);  
+			  }  
+	
 		
-		person.name="Viram_sarvariya";
-		person.number=9904168517l;
-		
-		
-		List p1=new ArrayList<>();
-		p1.add(person);
-		
-		 for(int i=0;i<p1.size();i++)  
-         {  
-			 System.out.println(p1.get(i));     
-         } 
+
 //		System.out.println(p1);
 		
 /* 
