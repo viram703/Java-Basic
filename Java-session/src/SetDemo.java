@@ -104,7 +104,7 @@ public class SetDemo {
 			  else
 			  {
 				  temp2=(Employes)temp;
-				  System.out.println("Employe name :"+temp2.name+" and number "+temp2.number);
+				  System.out.println("Employe name :"+temp2.name+" and number "+temp2.number	);
 			  }
 		  }
 
